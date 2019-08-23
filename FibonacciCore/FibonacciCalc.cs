@@ -4,6 +4,9 @@ namespace FibonacciCore
 {
     public class FibonacciCalc
     {
+        private const int minIndex = 1;
+        private const int maxIndex = 63;
+
         /// <summary>
         /// Calculate the nth position of the Fibonacci sequence given the position as an input.
         /// This method doesn't use recursion and is much faster than the recursive version
@@ -14,7 +17,7 @@ namespace FibonacciCore
         public static long CalculateFibonacci(int position)
         {
             // can't calc for less than 1 or for very large values
-            if (position < 1 || position > 63)
+            if (position < minIndex || position > maxIndex)
             {
                 return -1;
             }
@@ -39,7 +42,7 @@ namespace FibonacciCore
         /// <returns>The Fibonacci number in the input position. -1 if there is an error.</returns>
         public static long CalcFibonacciRecursive(int position)
         {
-            if (position < 0 || position > 63)
+            if (position < minIndex || position > maxIndex)
                 return -1;
             try
             {
