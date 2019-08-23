@@ -12,7 +12,9 @@ This is a class library that implements two different ways of computing the Fibo
 
 This is a simple console app that uses FibonacciCore to display the i<sup>th</sup> item in the Fibonacci sequence.
 
-I naively implemented the algorithm recursively. It is really slow. I used Stopwatch class to take high resolution timings.
+I naively implemented the algorithm recursively. It is really slow. 
+The non-recursive version is quite a bit faster and would be better to use.
+I used Stopwatch class to take high resolution timings of both versions for the sake of comparison.
 The program uses both algorithms for computing to show performance comparisons.
 
 ## FibbTest
